@@ -1,0 +1,114 @@
+/*
+Theme Name:   Motors Child
+Theme URI:    http://stylemixthems.com
+Description:  Motors Child
+Author:       Stylemix
+Author URI:   http://stylemix.net
+Template:     motors
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  motors-child
+*/
+
+
+/* Стили для вкладок и контента */
+.custom-editor-tabs {
+    width: 100%;
+}
+
+.tab-buttons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Скрыть все контенты, кроме активной вкладки */
+.tab-content:not(#tab1) {
+    display: none;
+}
+
+
+.custom-editor-tabs .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #000 !important;
+    background: #fff !important;
+    box-shadow: 0px 0px 2px 0px #153E4D;
+}
+
+
+.custom-editor-tabs .tab-buttons:before {
+    display: none;
+}
+
+.ui-widget-header {
+    background: #153E4D !important;
+}
+
+
+.custom-editor-tabs .tab-buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: none;
+}
+
+.custom-editor-tabs .tab-buttons li a {
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background: #153E4D;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+.custom-editor-tabs .tab-buttons li {
+    margin: 0 !important;
+    border: none !important;
+}
+
+
+.ui-state-active {
+    border-right: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important;
+    background: #fff !important;
+    color: #fff !important;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .custom-editor-tabs .tab-buttons {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+.tab-content {
+    border: none !important;
+}
+
+
